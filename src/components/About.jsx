@@ -31,7 +31,7 @@ export default function About() {
           </div>
 
           <div className="about-photo">
-            <img src="/photo.jpg" alt="Chris Yeh" />
+            <img src="/photo2.jpg" alt="Chris Yeh" />
           </div>
         </div>
       </div>
