@@ -183,11 +183,16 @@
 }
 
 .company-logo {
-  height: 22px;
+  height: 14px;
   width: auto;
-  border-radius: 4px;
+  max-width: 80px;
   object-fit: contain;
-  opacity: 0.85;
+  opacity: 0.8;
+}
+
+.company-logo--invert {
+  filter: invert(1);
+  height: 10px;
 }
 
 .currently p,

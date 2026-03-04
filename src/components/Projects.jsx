@@ -4,28 +4,36 @@ import './Projects.css'
 
 const PROJECTS = [
   {
-    title: 'Project One',
+    title: 'auto-gambler',
     description:
-      'A brief description of what this project does, the problem it solves, and why you built it.',
-    tags: ['React', 'Node.js', 'PostgreSQL'],
-    github: 'https://github.com/dopherdo',
+      'Discord bot that monitors channels for PrizePicks links and automatically places bets via undetected Chrome automation with human-like delays.',
+    tags: ['Python', 'Selenium', 'Discord API'],
+    github: 'https://github.com/dopherdo/auto-gambler',
     live: null,
   },
   {
-    title: 'Project Two',
+    title: '3D Koi Fish Reconstruction',
     description:
-      'A brief description of what this project does, the problem it solves, and why you built it.',
-    tags: ['Angular', 'C#', 'Entity Framework', 'SQL Server'],
-    github: 'https://github.com/dopherdo',
+      '3D reconstruction pipeline using structured light and stereo vision with two calibrated cameras to capture the geometry and color of a koi fish.',
+    tags: ['Python', 'Computer Vision', 'OpenCV'],
+    github: 'https://github.com/dopherdo/3d-koi-fish-reconstruction',
     live: null,
   },
   {
-    title: 'Project Three',
+    title: 'Mindful Gambling',
     description:
-      'A brief description of what this project does, the problem it solves, and why you built it.',
-    tags: ['Python', 'FastAPI', 'React'],
-    github: 'https://github.com/dopherdo',
-    live: '#',
+      'Browser-based Blackjack & Roulette using virtual currency. When you go broke, you watch responsible gambling videos to earn your balance back.',
+    tags: ['JavaScript', 'HTML', 'CSS'],
+    github: 'https://github.com/dopherdo/mindful-gambling',
+    live: 'https://mindful-gambling.netlify.app',
+  },
+  {
+    title: 'Movie-Land',
+    description:
+      'Movie search app powered by the OMDb API. Search by keyword and browse results with poster art and hover-reveal release dates.',
+    tags: ['React', 'OMDb API', 'CSS'],
+    github: 'https://github.com/dopherdo/Movie-Land',
+    live: null,
   },
 ]
 
