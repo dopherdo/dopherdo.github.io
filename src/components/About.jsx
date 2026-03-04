@@ -14,18 +14,19 @@ export default function About() {
         <div className="about-grid">
           <div className="about-text">
             <p>
-              I'm a software engineer finishing my degree at UC Irvine, graduating spring 2025.
-              I'll be joining SpaceX as a software engineering co-op in Hawthorne — building
+              I'm a software engineer finishing my degree at UC Irvine, graduating March 2026.
+              I'm currently working at SpaceX in a software engineering co-op in Hawthorne, building
               software that powers real rockets.
             </p>
             <p>
-              I care about writing clean, maintainable code and shipping things that actually
-              work. I'm comfortable across the stack — React, Angular, C#, Entity Framework,
-              and SQL — and I'm always looking to pick up whatever gets the job done best.
+              I love working on complex systems, whether that's building something from scratch
+              or jumping into a massive codebase that's been around longer than I've been coding.
+
             </p>
             <p>
-              Outside of work I'm into basketball, travelling, and personal finance. Based between Irvine, Fullerton,
-              and wherever the next opportunity takes me.
+              Outside of work I'm into basketball, cars, travelling, music festivals, and personal 
+              finance. Based between Irvine, Fullerton, and wherever the next opportunity takes me.
+
             </p>
           </div>
 
