@@ -1,0 +1,71 @@
+/* ── Scroll entry ── */
+.about-body {
+  opacity: 0;
+}
+.about.in-view .about-body {
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.05s forwards;
+}
+
+/* ── Layout ── */
+.about {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 60px;
+  padding: 100px 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 56px;
+  align-items: start;
+}
+
+/* ── Text ── */
+.about-text p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: #aaa;
+  margin-bottom: 18px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Photo ── */
+.photo-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ── Mobile ── */
+@media (max-width: 860px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 60px 24px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about-photo {
+    order: -1;
+  }
+  .photo-placeholder {
+    aspect-ratio: 1;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
