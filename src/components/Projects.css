@@ -3,7 +3,7 @@
   opacity: 0;
 }
 .projects.in-view .project-card {
-  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) calc(0.05s + var(--i) * 0.12s) forwards;
+  animation: fade-up 1.5s cubic-bezier(0.16, 1, 0.3, 1) calc(0.08s + var(--i) * 0.18s) forwards;
 }
 
 /* ── Layout ── */
@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: 160px 1fr;
   gap: 60px;
-  padding: 60px 80px 140px;
+  padding: 100px 80px 160px;
   max-width: 1100px;
   margin: 0 auto;
 }

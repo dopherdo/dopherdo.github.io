@@ -1,12 +1,12 @@
 /* ── Initial load animations ── */
 .hero-name {
-  animation: hero-load 1s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
+  animation: hero-load 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
 }
 .icon-row {
-  animation: hero-load 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+  animation: hero-load 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
 }
 .status-row {
-  animation: hero-load 1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+  animation: hero-load 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
 }
 
 /* ── Hero section ── */
@@ -32,7 +32,7 @@
 .hero-line1 {
   font-family: 'DM Sans', sans-serif;
   font-size: clamp(52px, 9vw, 108px);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -0.03em;
   color: #fff;
   line-height: 1;
@@ -113,37 +113,47 @@
   opacity: 1;
 }
 
-/* ── Status row (currently + previously) ── */
+/* ── Status row ── */
 .status-row {
   display: flex;
   align-items: center;
   gap: 32px;
 }
 
-.divider {
+.status-divider {
   width: 1px;
   height: 36px;
   background: #272727;
 }
 
-.currently {
+.currently,
+.previously {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
 
-.currently-pill {
+.currently-pill,
+.previously-pill {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  border: 1px solid #2e2e2e;
   border-radius: 20px;
   padding: 5px 14px;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.14em;
+}
+
+.currently-pill {
+  border: 1px solid #2e2e2e;
   color: var(--muted);
+}
+
+.previously-pill {
+  border: 1px solid #242424;
+  color: #444;
 }
 
 .currently-dot {
@@ -154,47 +164,41 @@
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
+.previously-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3a3a3a;
+}
+
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.25; }
 }
 
-.currently p {
+.status-company {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.company-logo {
+  height: 22px;
+  width: auto;
+  border-radius: 4px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.currently p,
+.previously p {
   font-size: 14px;
   color: #bbb;
 }
 
-/* ── Previously ── */
-.previously {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.previously-label {
-  font-family: 'Syne', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #383838;
-}
-
-.previously p {
-  font-size: 14px;
-  color: #484848;
-}
-
-@media (max-width: 600px) {
-  .status-row {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .divider {
-    width: 36px;
-    height: 1px;
-  }
+@media (max-width: 560px) {
+  .status-row { flex-direction: column; gap: 20px; }
+  .status-divider { width: 36px; height: 1px; }
 }
 
 /* ── Scroll indicator ── */

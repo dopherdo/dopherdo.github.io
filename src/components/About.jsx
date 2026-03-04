@@ -24,7 +24,7 @@ export default function About() {
               and SQL — and I'm always looking to pick up whatever gets the job done best.
             </p>
             <p>
-              Outside of work I'm into [your hobbies here]. Based between Irvine, Fullerton,
+              Outside of work I'm into basketball, travelling, and personal finance. Based between Irvine, Fullerton,
               and wherever the next opportunity takes me.
             </p>
           </div>

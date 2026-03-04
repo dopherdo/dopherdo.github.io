@@ -30,6 +30,11 @@ a {
   text-decoration: none;
 }
 
+/* Offset anchor scroll so sections clear the NavDock */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -37,7 +42,7 @@ img {
 
 /* ── Keyframes ── */
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(32px); }
+  from { opacity: 0; transform: translateY(72px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 

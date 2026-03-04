@@ -20,13 +20,17 @@ function TypedLine({ text, startDelay }) {
 
     if (!deleting) {
       if (count < text.length) {
-        t = setTimeout(() => setCount(c => c + 1), 60)
+        const char = text[count]
+        const base = 60 + Math.random() * 60
+        // natural micro-pauses after spaces and on capital letters
+        const delay = char === ' ' ? base + 60 : char === char.toUpperCase() && char !== char.toLowerCase() ? base + 30 : base
+        t = setTimeout(() => setCount(c => c + 1), delay)
       } else {
         t = setTimeout(() => setDeleting(true), 1600)
       }
     } else {
       if (count > 0) {
-        t = setTimeout(() => setCount(c => c - 1), 32)
+        t = setTimeout(() => setCount(c => c - 1), 30)
       } else {
         t = setTimeout(() => setDeleting(false), 500)
       }
@@ -84,13 +88,16 @@ export default function Hero() {
               <span className="currently-dot" />
               CURRENTLY
             </span>
-            <p>Incoming Software Engineer @ SpaceX</p>
+            <p>Software Engineer · SpaceX</p>
           </div>
 
-          <div className="divider" />
+          <div className="status-divider" />
 
           <div className="previously">
-            <span className="previously-label">previously</span>
+            <span className="previously-pill">
+              <span className="previously-dot" />
+              PREVIOUSLY
+            </span>
             <p>Software Engineer Intern · Capital One</p>
           </div>
         </div>
