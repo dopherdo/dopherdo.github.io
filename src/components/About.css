@@ -36,6 +36,14 @@
 }
 
 /* ── Photo ── */
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
+}
+
 .photo-placeholder {
   width: 100%;
   aspect-ratio: 3 / 4;

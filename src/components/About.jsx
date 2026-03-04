@@ -31,10 +31,7 @@ export default function About() {
           </div>
 
           <div className="about-photo">
-            {/* Replace with: <img src="/photo.jpg" alt="Chris Yeh" /> */}
-            <div className="photo-placeholder">
-              <span>Your photo here</span>
-            </div>
+            <img src="/photo.jpg" alt="Chris Yeh" />
           </div>
         </div>
       </div>
