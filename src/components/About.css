@@ -18,7 +18,7 @@
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 240px;
+  grid-template-columns: 1fr 288px;
   gap: 56px;
   align-items: start;
 }
