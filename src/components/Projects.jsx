@@ -20,12 +20,12 @@ const PROJECTS = [
     live: null,
   },
   {
-    title: 'Mindful Gambling',
+    title: 'BJ Central',
     description:
-      'Browser-based Blackjack & Roulette using virtual currency. When you go broke, you watch responsible gambling videos to earn your balance back.',
+      'All Things Blackjack — blackjack for a card counting trainer and blackjack for mindful gambling, with virtual currency and responsible-gambling videos when you need a reset.',
     tags: ['JavaScript', 'HTML', 'CSS'],
-    github: 'https://github.com/dopherdo/mindful-gambling',
-    live: 'https://mindful-gambling.netlify.app',
+    github: 'https://github.com/dopherdo/bjcentral',
+    live: 'https://bjcentral.netlify.app/',
   },
   {
     title: 'Movie-Land',
