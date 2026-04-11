@@ -23,7 +23,7 @@ const PROJECTS = [
     title: 'BJ Central',
     description:
       'All Things Blackjack — blackjack for a card counting trainer and blackjack for mindful gambling, with virtual currency and responsible-gambling videos when you need a reset.',
-    tags: ['JavaScript', 'HTML', 'CSS'],
+    tags: ['React', 'Firebase', 'Firestore'],
     github: 'https://github.com/dopherdo/bjcentral',
     live: 'https://bjcentral.netlify.app/',
   },
