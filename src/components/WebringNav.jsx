@@ -1,7 +1,7 @@
 import './WebringNav.css'
 
 const WEBRING_URL = 'https://webring.lpnuci.com'
-const SITE_ID = 'dopherdo.github.io'
+const SITE_ID = 'chrisyeh.dev'
 
 export default function WebringNav() {
   return (
